@@ -60,8 +60,8 @@ public class DetallePersona extends AppCompatActivity {
     public void eliminar(View v){
         String positivo, negativo;
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setTitle("Eliminar Persona");
-        builder.setMessage("¿Está seguro de eliminar esta persona?");
+        builder.setTitle(R.string.eliminar_persona);
+        builder.setMessage(R.string.confirmacion_eliminar);
         positivo=getString(R.string.mensaje_positivo);
         negativo=getString(R.string.mensaje_negativo);
 
