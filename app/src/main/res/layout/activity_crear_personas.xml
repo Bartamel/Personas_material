@@ -21,7 +21,8 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <EditText
         android:id="@+id/txtcedula"
@@ -57,13 +58,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="guardar"
             android:text="@string/guardar" />
 
         <Button
             android:id="@+id/btnLimpiar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
             android:layout_weight="1"
+            android:onClick="limpiar"
             android:text="@string/limpiar" />
     </LinearLayout>
 </LinearLayout>
