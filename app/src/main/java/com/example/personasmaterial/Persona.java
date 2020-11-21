@@ -12,6 +12,9 @@ public class Persona {
         this.apellido=apellido;
         this.id=id;
     }
+    public Persona(){
+
+    }
 
     public String getNombre() {
         return nombre;
