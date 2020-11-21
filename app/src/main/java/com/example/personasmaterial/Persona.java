@@ -1,5 +1,7 @@
 package com.example.personasmaterial;
 
+import com.google.firebase.database.DataSnapshot;
+
 public class Persona {
     private String cedula;
     private String nombre;
@@ -12,9 +14,7 @@ public class Persona {
         this.apellido=apellido;
         this.id=id;
     }
-    public Persona(){
-
-    }
+    public Persona(){    }
 
     public String getNombre() {
         return nombre;
@@ -50,5 +50,8 @@ public class Persona {
 
     public void guardar(){
         Datos.guardar(this);
+    }
+    public void eliminar(){
+        Datos.eliminar(this);
     }
 }
